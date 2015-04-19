@@ -1,15 +1,14 @@
 # mizchi's minimum frontend project
 
 ```
-$ npm install -g browserify watchify
-$ npm install
+npm install -g mizchi/prj
+prj foo babel
 ```
 
-## Commands
+# watch
 
 ```
 $ npm run watch # start watchify
-$ npm run open  # open localhost:9966 by GoogleChromeCanary
 ```
 
 and open index.html
