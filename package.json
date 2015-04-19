@@ -1,16 +1,19 @@
 {
-  "name": "minskl",
+  "name": "prj",
   "version": "0.0.0",
+  "bin": "cli",
   "description": "mizchi's minimum project",
   "scripts": {
-    "server": "wzrd index.coffee:bundle.js -- -t coffeeify --extension='.coffee'",
-    "build": "browserify -t coffeeify --extension='.coffee' -o bundle.js index.coffee",
+    "watch": "$(npm bin)/watchify -v -t coffeeify --extension='.coffee' -o bundle.js index.coffee",
+    "build": "$(npm bin)/browserify -t coffeeify --extension='.coffee' -o bundle.js index.coffee",
     "open": "open -a /Applications/Google\\ Chrome\\ Canary.app 'http://localhost:9966'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "coffeeify": "^1.0.0"
+    "browserify": "^9.0.8",
+    "coffeeify": "^1.0.0",
+    "watchify": "^3.1.1"
   }
 }
