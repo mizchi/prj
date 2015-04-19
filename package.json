@@ -4,16 +4,14 @@
   "bin": "cli",
   "description": "mizchi's minimum project",
   "scripts": {
-    "watch": "$(npm bin)/watchify -v -t coffeeify --extension='.coffee' -o bundle.js index.coffee",
-    "build": "$(npm bin)/browserify -t coffeeify --extension='.coffee' -o bundle.js index.coffee",
-    "open": "open -a /Applications/Google\\ Chrome\\ Canary.app 'http://localhost:9966'",
+    "watch": "$(npm bin)/watchify -v -t babelify --extension='.es6' -o bundle.js index.es6",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "browserify": "^9.0.8",
-    "coffeeify": "^1.0.0",
-    "watchify": "^3.1.1"
+    "watchify": "^3.1.1",
+    "babelify": "^5.0.4"
   }
 }
